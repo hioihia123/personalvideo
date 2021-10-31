@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Video Holder ZERO MEAL PROJECT</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/4.2.2/introjs.min.css" integrity="sha512-631ugrjzlQYCOP9P8BOLEMFspr5ooQwY3rgt8SMUa+QqtVMbY/tniEUOcABHDGjK50VExB4CNc61g5oopGqCEw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+<style>
+  .customTooltip * {
+  font-size: 18px;
+  color: black;
+}
+
+.customTooltip .introjs-tooltip-title {
+  color: #0a41c9;
+}
+.customTooltip .introjs-nextbutton {
+  background: white;
+  border-radius: 12px;
+  border: 2px solid #2412c5;
+}
+  .customTooltip .introjs-nextbutton:hover {
+    color: white;
+    background-color: #121fda;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.customTooltip .introjs-prevbutton {
+  background: white;
+  border-radius: 12px;
+  border: 2px solid #c51212;
+}
+.customTooltip .introjs-prevbutton:hover {
+    color: white;
+    background-color: #e61717;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.customTooltip .introjs-skipbutton{
+  font-size: 25px;
+}
+.customTooltip .introjs-skipbutton:hover{
+ color: rgb(255, 0, 98);
+}
+
+</style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!--  Fixed body -->
+<style>#player{position:absolute;width:100%!important;height:100%!important;}
+</style>
+  <div id="player" class="step1"></div>
+<!-- partial -->
+  <script src='https://content.jwplatform.com/libraries/Jq6HIbgz.js'></script><script  src="./script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/4.2.2/intro.min.js" integrity="sha512-Q5ZL29wmQV0WWl3+QGBzOFSOwa4e8lOP/o2mYGg13sJR7u5RvnY4yq83W5+ssZ/VmzSBRVX8uGhDIpVSrLBQog==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    const intro = introJs();
+    introJs().setOptions({
+    
+    tooltipClass: 'customTooltip',
+    showProgress: true,
+      steps: [{
+        title: "Welcome",
+        intro: 'Hello there! 👋. Welcome to my personal video website',
+        position: "bottom"
+      },
+      {
+        title: 'An average website 😙',
+        intro: 'I coded this website in my spare time :D. [ influenced by Youtube 😸 ]',
+        position: 'left'
+      },
+    
+      {
+        title: 'Images Sources',
+        intro: 'These are sources file links of the images I used in this video => shorturl.at/uFQY8'
+      },
+      {
+        title:'ENJOY THE SHOW',
+        intro: 'Okay, no more of this annoying guided tour. Enjoy the show 😸'
+      }]
+    }).start();
+    </script>
+</div>
+</body>
+</html>
